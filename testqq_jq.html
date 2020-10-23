@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>qqtest</title>
+        <meta http-equiv="expires" content="0">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+        <link rel="stylesheet" type="text/css" href="http://imgcache.gtimg.cn/tencentvideo_v1/mobile/v2/style/play.css">
+        <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+
+        <script language="javascript" src="https://imgcache.qq.com/tencentvideo_v1/tvp/js/tvp.player_v2_jq.js" charset="utf-8"></script>
+
+    </head>
+    <body>
+	    <a class="btn btn-default" href="index.html" title="Retour">Retour</a>
+        <div id="mod_player"></div>
+        <script language="javascript">
+            var video = new tvp.VideoInfo();
+            video.setVid("u0962qf7xoh");
+            var player = new tvp.Player();
+            player.create({
+               width: 480,
+                height: 360,
+				playerType: 'html5',
+                video: video,
+				modId: "mod_player",
+            });
+	
+        </script>
+    </body>
+</html>
