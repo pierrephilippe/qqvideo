@@ -43,6 +43,7 @@
                         var newUrl = this.getCurVideo().url.replace(ipPattern,"https://");
                         console.log('new url');
                         console.log(newUrl);
+                        newVideo.url = newUrl;
                         this.setCurVideo(newVideo);
                         console.log(this);
                     },
