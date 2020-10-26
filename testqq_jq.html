@@ -23,24 +23,18 @@
         </div>
 
         <script language="javascript">
-                var video = new tvp.VideoInfo();
-                video.setVid("mzc00200m0uokme");
-                var player = new tvp.Player();
-                player.create({
-                    width: 480,
-                    height: 360,
-                    playerType: 'html5',
-                    video: video,
-                    modId: "mod_player",
-                    vodFlashExtVars:{
-                        showend:0,
-                        favorite:0,
-                        searchbar:0
-                    },
-                    onwrite:function(){
-                        console.log("write");
-                    }
-                });
+            var video = new tvp.VideoInfo();
+            video.setVid("v0667asexol");
+            var player = new tvp.Player();
+            player.create({
+                width: 480,
+                height: 360,
+                playerType: 'html5',
+                video: video,
+                modId: "mod_player",
+                vodFlashExtVars: {bullet:0, logo:0, searchpanel:0, showend:0},
+                isVodFlashShowCfg: false,
+            });
         </script>
 
         <!-- Optional JavaScript; choose one of the two! -->
