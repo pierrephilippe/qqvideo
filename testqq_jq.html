@@ -40,6 +40,9 @@
                     },
                 });
 
+                player.on('ready', function() {
+                    console.log("player ready !");
+                });
                 // var newVideo = player.getCurVideo();
                 // var newUrl = "https://" + player.getCurVideo().url.split('/').slice(3).join("/");
                 // newVideo.url = newUrl;
