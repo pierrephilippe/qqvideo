@@ -36,8 +36,10 @@
                 var ipPattern = "/(http://)\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/g";
 
                 var newVideo = player.getCurVideo();
+                console.log(newVideo);
                 newVideo.url = newVideo.url.replace(ipPattern,"https://");
-                player.setCurVideo();
+                console.log(newVideo);
+                player.setCurVideo(newVideo);
 
         </script>
 
