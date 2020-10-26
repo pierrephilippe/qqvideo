@@ -36,23 +36,13 @@
                         console.log("oninited");
                         console.log(this);
                         console.log(this.getCurVideo());
-                    },
-                    onwrite: function() {
-                        console.log("onwrite");
-                        console.log(this.getCurVideo());
+                        var ipPattern = "/(http://)\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/g";
+                        var newVideo = this.getCurVideo();
+                        newVideo.url = newVideo.url.replace(ipPattern,"https://");
+                        this.setCurVideo(newVideo);
                     },
                 });
 
-
- 
-                console.log(player);
-                var ipPattern = "/(http://)\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/g";
-                var newVideo = player.getCurVideo();
-                console.log(newVideo.url);
-                newVideo.url = newVideo.url.replace(ipPattern,"https://");
-                console.log(newVideo.url);
-                player.setCurVideo(newVideo);
-                console.log(player);
                 
 
 
