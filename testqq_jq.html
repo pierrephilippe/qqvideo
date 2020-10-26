@@ -32,17 +32,17 @@
                     playerType: 'html5',
                     video: video,
                     modId: "mod_player",
-                    onwrite:function(){
-                        console.log('inited');
-                        var ipPattern = "/(http://)\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/g";
-                        var newVideo = player.getCurVideo();
-                        console.log(newVideo.url);
-                        newVideo.url = newVideo.url.replace(ipPattern,"https://");
-                        console.log(newVideo.url);
-                        player.setCurVideo(newVideo);
-                        console.log(player);
-                    }
                 });
+
+                console.log('inited');
+                console.log(player);
+                var ipPattern = "/(http://)\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/g";
+                var newVideo = player.getCurVideo();
+                console.log(newVideo.url);
+                newVideo.url = newVideo.url.replace(ipPattern,"https://");
+                console.log(newVideo.url);
+                player.setCurVideo(newVideo);
+                console.log(player);
                 
 
 
