@@ -36,11 +36,10 @@
                         console.log("oninited");
                         console.log(this);
                         console.log(this.getCurVideo());
-                        var ipPattern = "/(http:\/\/)\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/g";
                         var newVideo = this.getCurVideo();
                         console.log('newVideo');
                         console.log(newVideo.url);
-                        var newUrl = this.getCurVideo().url.replace(ipPattern,"https://");
+                        var newUrl = "https://" + this.getCurVideo().url.split('/').slice(3).join("/");
                         console.log('new url');
                         console.log(newUrl);
                         newVideo.url = newUrl;
