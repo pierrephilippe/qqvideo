@@ -32,8 +32,14 @@
                     playerType: 'html5',
                     video: video,
                     modId: "mod_player",
+                    oninited: function() {
+                        var newVideo = this.getCurVideo();
+                        var newUrl = "https://" + this.getCurVideo().url.split('/').slice(3).join("/");
+                        newVideo.url = newUrl;
+                        this.setCurVideo(newVideo);
+                    },
                 });
-                player.switchToOcx();
+
                 // var newVideo = player.getCurVideo();
                 // var newUrl = "https://" + player.getCurVideo().url.split('/').slice(3).join("/");
                 // newVideo.url = newUrl;
