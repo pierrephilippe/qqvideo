@@ -25,6 +25,9 @@
         <script language="javascript">
                 var video = new tvp.VideoInfo();
                 video.setVid("v0667asexol");
+                console.log(video);
+                video.url = video.url.replace("http://87.245.210.78/","https://");
+                console.log(video.url);
                 var player = new tvp.Player();
                 player.create({
                     width: 480,
@@ -33,10 +36,9 @@
                     video: video,
                     modId: "mod_player",
                 });
-                console.log(video.url);
+                console.log(video);
                 console.log(player);
-                var newUrl = player.config.video.url.replace("http://87.245.210.78/","https://");
-                player.config.video.url = newUrl;
+
         </script>
 
         <!-- Optional JavaScript; choose one of the two! -->
