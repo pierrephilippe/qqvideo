@@ -40,7 +40,7 @@
                         var newVideo = this.getCurVideo();
                         console.log('newVideo');
                         console.log(newVideo.url);
-                        newVideo.url = this.getCurVideo().url.replace(ipPattern,"https://");
+                        newVideo.url = this.getCurVideo().url.replace("http://","https://");
                         console.log('url replaced');
                         console.log(newVideo.url);
                         this.setCurVideo(newVideo);
