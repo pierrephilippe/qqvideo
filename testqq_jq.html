@@ -32,6 +32,14 @@
                     playerType: 'html5',
                     video: video,
                     modId: "mod_player",
+                    oninited: function() {
+                        console.log("oninited");
+                        console.log(this);
+                    },
+                    onwrite: function() {
+                        console.log("onwrite");
+                        console.log(this);
+                    },
                 });
 
                 
