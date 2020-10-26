@@ -35,16 +35,16 @@
                 });
 
                 
-                player.on('inited', function(){
+                player.oninited(function(){
                     console.log('inited');
 
                 });
 
-                player.on('write', function() {
+                player.onwrite(function() {
                     console.log('write');
                 });
 
-                console.log('inited');
+ 
                 console.log(player);
                 var ipPattern = "/(http://)\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/g";
                 var newVideo = player.getCurVideo();
