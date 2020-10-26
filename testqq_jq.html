@@ -20,17 +20,18 @@
         </div>
 
         <script language="javascript">
-            var video = new tvp.VideoInfo();
-            video.setVid("v0667asexol");
-            var player = new tvp.Player();
-            player.create({
-                width: 480,
-                height: 360,
-                playerType: 'html5',
-                video: video,
-                modId: "mod_player",
+            $(function() {
+                var video = new tvp.VideoInfo();
+                video.setVid("v0667asexol");
+                var player = new tvp.Player();
+                player.create({
+                    width: 480,
+                    height: 360,
+                    playerType: 'html5',
+                    video: video,
+                    modId: "mod_player",
+                });
             });
-
         </script>
 
         <!-- Optional JavaScript; choose one of the two! -->
