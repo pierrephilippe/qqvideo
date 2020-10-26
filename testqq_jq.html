@@ -36,6 +36,7 @@
 
                 var newVideo = this.getCurVideo();
                 var newUrl = "https://" + player.getCurVideo().url.split('/').slice(3).join("/");
+                newVideo.url = newUrl;
                 player.setCurVideo(newVideo);
                 player.create();
 
