@@ -25,7 +25,6 @@
         <script language="javascript">
                 var video = new tvp.VideoInfo();
                 video.setVid("u3164l3an58");
-                video.url = "https://v.qq.com/x/page/u3164l3an58.html"
                 var player = new tvp.Player();
                 player.create({
                     width: 480,
@@ -34,12 +33,12 @@
                     video: video,
                     modId: "mod_player",
                 });
-
-                var newVideo = player.getCurVideo();
-                var newUrl = "https://" + player.getCurVideo().url.split('/').slice(3).join("/");
-                newVideo.url = newUrl;
-                player.setCurVideo(newVideo);
-                player.play();               
+                player.switchToOcx();
+                // var newVideo = player.getCurVideo();
+                // var newUrl = "https://" + player.getCurVideo().url.split('/').slice(3).join("/");
+                // newVideo.url = newUrl;
+                // player.setCurVideo(newVideo);
+                // player.play();               
 
 
         </script>
