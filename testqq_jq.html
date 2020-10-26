@@ -35,19 +35,14 @@
                     oninited: function() {
                         console.log("oninited");
                         console.log(this);
+                        console.log(this.getCurVideo());
                     },
                     onwrite: function() {
                         console.log("onwrite");
-                        console.log(this);
+                        console.log(this.getCurVideo());
                     },
                 });
 
-                
-
-
-                player.onwrite(function() {
-                    console.log('write');
-                });
 
  
                 console.log(player);
