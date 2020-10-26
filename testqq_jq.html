@@ -38,7 +38,12 @@
                         searchbar:0
                     },
                     onwrite:function(a){
+                        console.log('write');
                         console.log(a);
+                    },
+                    oninited: function(i){
+                        console.log('inited');
+                        console.log(i);
                     }
                 });
         </script>
