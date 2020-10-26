@@ -25,9 +25,6 @@
         <script language="javascript">
                 var video = new tvp.VideoInfo();
                 video.setVid("v0667asexol");
-                console.log(video.url);
-                video.url = video.url.replace("http://87.245.210.78/","https://");
-                console.log(video.url);
                 var player = new tvp.Player();
                 player.create({
                     width: 480,
@@ -36,6 +33,11 @@
                     video: video,
                     modId: "mod_player",
                 });
+                var ipPattern = /(http://)\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/g;
+                
+                var newVideo = player.getCurVideo();
+                newVideo.url = newVideo.url.replace(ipPattern,"https://");
+                player.setCurVideo();
 
         </script>
 
