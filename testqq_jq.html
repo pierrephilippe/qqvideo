@@ -38,8 +38,10 @@
                         console.log(this.getCurVideo());
                         var ipPattern = "/(http://)\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/g";
                         var newVideo = this.getCurVideo();
-                        newVideo.url = newVideo.url.replace(ipPattern,"https://");
                         console.log('newVideo');
+                        console.log(newVideo.url);
+                        newVideo.url = this.getCurVideo().url.replace(ipPattern,"https://");
+                        console.log('url replaced');
                         console.log(newVideo.url);
                         this.setCurVideo(newVideo);
                         console.log(this);
