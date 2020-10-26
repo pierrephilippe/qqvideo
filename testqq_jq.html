@@ -40,8 +40,8 @@
                         var newVideo = this.getCurVideo();
                         console.log('newVideo');
                         console.log(newVideo.url);
-                        var newUrl = this.getCurVideo().url.replace("http://","https://");
-                        console.log('url replaced');
+                        var newUrl = this.getCurVideo().url.replace("http","https");
+                        console.log('new url replaced');
                         console.log(newUrl);
                         this.setCurVideo(newVideo);
                         console.log(this);
