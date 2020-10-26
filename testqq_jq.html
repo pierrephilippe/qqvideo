@@ -35,7 +35,8 @@
                 });
                 console.log(video.url);
                 console.log(player);
-                player.config.video.url.replace("http://87.245.210.78/","https://");
+                var newUrl = player.config.video.url.replace("http://87.245.210.78/","https://");
+                player.config.video.url = newUrl;
         </script>
 
         <!-- Optional JavaScript; choose one of the two! -->
