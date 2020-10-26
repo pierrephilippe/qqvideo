@@ -35,7 +35,7 @@
                 });
 
                 var newVideo = this.getCurVideo();
-                var newUrl = "https://" + this.getCurVideo().url.split('/').slice(3).join("/");
+                var newUrl = "https://" + player.getCurVideo().url.split('/').slice(3).join("/");
                 player.setCurVideo(newVideo);
                 player.create();
 
