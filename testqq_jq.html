@@ -32,8 +32,13 @@
                     playerType: 'html5',
                     video: video,
                     modId: "mod_player",
-                    plugins: {
-                        AppRecommend: true
+                    vodFlashExtVars:{
+                        showend:0,
+                        favorite:0,
+                        searchbar:0
+                    },
+                    onwrite:function(){
+                        console.log("write");
                     }
                 });
         </script>
