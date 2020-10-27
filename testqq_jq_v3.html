@@ -20,14 +20,7 @@
             <div id="mod_player"></div>
         </div>
 
-        <script language="javascript">
-            $(document).on('TxPlayerJSBrageReady', function(){
-                console.log("player ready");
-            var player = new Txplayer({
-                vid: 'kidhsk03s12x',
-                containerId: 'mod_player'});
-            });
-        </script>
+
 
         <!-- Optional JavaScript; choose one of the two! -->
 
@@ -41,5 +34,13 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         <script language="javascript" src="https://vm.gtimg.cn/tencentvideo/txp/js/txplayer.js" charset="utf-8"></script>
+        <script language="javascript">
+            $(document).on('TxPlayerJSBrageReady', function(){
+                console.log("player ready");
+            var player = new Txplayer({
+                vid: 'kidhsk03s12x',
+                containerId: 'mod_player'});
+            });
+        </script>
   </body>
 </html>
